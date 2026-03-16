@@ -14,3 +14,7 @@ export default function UseEffect() {
     </div>
   );
 }
+/*useEffect(
+  ()=>{console.log("Count is "+count)},[count]  
+) 
+  useEffect is a hook */

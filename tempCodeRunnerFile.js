@@ -1,4 +1,4 @@
-// // Synchrounous Programming
+// Synchrounous Programming
 // console.log("Begin");
 // console.log("Data initiated");
 // console.log("End");
@@ -21,15 +21,3 @@
 //   if(success) resolve("Promise resolved");
 //   else reject("Error");
 // })
-
-// Jab promise return ho kr aata h to then() and catch() use hota h
-// fetch is a method to connect with API's
-fetch(" https://jsonplaceholder.typicode.com/users ")
-.then(response=>response.json())
-.then(user=>{
-  user.forEach(element => {
-    console.log(element.name);
-  });
-})
-.catch(error=>console.log(error));
-

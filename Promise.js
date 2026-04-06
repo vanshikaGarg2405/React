@@ -33,3 +33,17 @@ fetch(" https://jsonplaceholder.typicode.com/users ")
 })
 .catch(error=>console.log(error));
 
+//axios is a library
+axios.get("https://jsonplaceholder.typicode.com/users")
+.then(data=>console.log(data))
+.catch(error=>console.log(error))
+
+//async-await
+async function fetchData(){
+  try{
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+  }
+  catch(exception e) {
+
+  }
+}
